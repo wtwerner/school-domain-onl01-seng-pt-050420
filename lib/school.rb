@@ -23,6 +23,6 @@ class School
     @roster[grade]
   end
   def sort
-    @roster.sort_by{|grade, students| students}.to_h
+    @roster.each
   end
 end
