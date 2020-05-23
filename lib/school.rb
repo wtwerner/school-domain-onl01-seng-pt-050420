@@ -23,8 +23,6 @@ class School
     @roster[grade]
   end
   def sort
-    @roster.each do |key, val|
-      @roster[key].values_at.sort
-    end
+    @roster.each {|grade, students| students.sort!}
   end
 end
