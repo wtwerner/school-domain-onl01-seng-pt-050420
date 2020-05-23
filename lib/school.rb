@@ -23,8 +23,7 @@ class School
     @roster[grade]
   end
   def sort
-    @roster.map do |grade, students|
-      @roster[grade][students].sort.to_s
+    @roster.sort_by{|key, val| val}
     end
   end
 end
