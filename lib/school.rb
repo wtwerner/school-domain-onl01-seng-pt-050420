@@ -24,6 +24,5 @@ class School
   end
   def sort
     @roster.sort_by{|key, val| val}.to_h
-    end
   end
 end
