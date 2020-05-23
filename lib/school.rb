@@ -23,6 +23,7 @@ class School
     @roster[grade]
   end
   def sort
-    @roster.values.sort.assert_no_match
+    @roster.sort_by{|key, val| val}
+    @roster
   end
 end
