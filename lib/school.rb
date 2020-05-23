@@ -23,7 +23,7 @@ class School
     @roster[grade]
   end
   def sort
-    @roster.sort_by{|key, val| val}.to_h
+    @roster.values.sort
     @roster
   end
 end
