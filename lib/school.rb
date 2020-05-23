@@ -1,5 +1,6 @@
 class School
-  attr_accessor :student, :grade
+  attr_accessor :student
+  attr_reader :grade
   def initialize(name)
     @name=name
     @roster = {}
@@ -17,5 +18,8 @@ class School
     else
       @roster[grade] << student
     end
+  end
+  def grade(grade)
+    @grade[grade]
   end
 end
